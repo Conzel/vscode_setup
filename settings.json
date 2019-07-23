@@ -1,19 +1,12 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "material-icon-theme.folders.color": "#26a69a",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
     },
-    "terminal.integrated.fontFamily": "Menlo for Powerline",
-    "cmake.configureOnOpen": true,
-    "files.autoSave": "afterDelay",
-    "explorer.confirmDragAndDrop": false,
-    "python.jediEnabled": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "One Dark Pro",
-    "explorer.confirmDelete": false
 }
