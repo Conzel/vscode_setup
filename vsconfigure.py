@@ -15,7 +15,7 @@ settings_path = os.path.expandvars("$HOME/.config/Code - OSS/User/settings.json"
 # ------------------------------------------------------------------------------------
 
 def print_help_and_exit():
-    print("Usage: Enter the extension pack you want to install (see extenions/)")
+    print("Usage: Enter the extension pack you want to install (see extensions/)")
     print("or enter \"settings\" to copy general settings.")
     sys.exit()
 
