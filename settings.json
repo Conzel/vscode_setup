@@ -1,12 +1,15 @@
 {
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
     "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "explorer.confirmDelete": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Material Theme",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
     "material-icon-theme.folders.color": "#26a69a",
+    "explorer.confirmDragAndDrop": false,
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
-    },
+    }
 }
