@@ -21,8 +21,7 @@ def print_help_and_exit():
         print("\t" + extension)
     sys.exit()
 
-# copy settings from this folder to user settings folder
-def copy_settings():
+def copy_settings_to_local_vscode():
     settings_base_directory = os.path.dirname(settings_path)
     if not os.path.exists(settings_base_directory):
         print("The settings path in the script file does not exist.")
@@ -30,7 +29,6 @@ def copy_settings():
     shutil.copy("keybindings.json", settings_base_directory)
     shutil.copy("settings.json", settings_base_directory)
 
-# specified under extensions/
 def install_extension_pack(extension_pack):
     # that the pack exists has been verified in main
     with open("extensions/" + extension_pack, "r") as extension_pack_file:
@@ -38,8 +36,6 @@ def install_extension_pack(extension_pack):
             extension = extension.strip('\n')
             subprocess.call(["code", "--install-extension", extension])
 
-# checks that every extension pack file exists no undefined arguments
-# are entered
 def verify_arguments():
     for argument in sys.argv[1:]:
         if argument != "settings" and argument not in extension_packs:
@@ -55,7 +51,7 @@ def main():
     
     for argument in sys.argv[1:]:
         if argument == "settings":
-            copy_settings()
+            copy_settings_to_local_vscode()
         
         else:
             install_extension_pack(argument)
