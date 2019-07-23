@@ -57,6 +57,9 @@ def main():
             install_extension_pack(argument)
 
 if __name__ == "__main__":
+    # makes script callable from symlinks
+    os.chdir(os.path.dirname(os.path.realpath(__file__)))
+
     extension_packs = os.listdir("extensions")
     verify_arguments()
     main()
