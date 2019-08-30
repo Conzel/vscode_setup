@@ -9,6 +9,8 @@
     "files.autoSave": "afterDelay",
     "material-icon-theme.folders.color": "#26a69a",
     "explorer.confirmDragAndDrop": false,
+    "editor.lineNumbers": "relative",
+    "vim.ignorecase": true,
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     }
