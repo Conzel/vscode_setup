@@ -10,7 +10,7 @@ import shutil
 # see: https://code.visualstudio.com/docs/getstarted/settings
 # enter the string for your OS here 
 # if you built from Open Source (OSS) build the folder might differ
-settings_path = os.path.expandvars("$HOME/.config/Code - OSS/User/settings.json")
+settings_path = os.path.expandvars("$HOME/.config/Code/User/settings.json")
 
 # ------------------------------------------------------------------------------------
 
